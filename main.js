@@ -39,6 +39,6 @@ form.addEventListener('submit', function(event){
     if (!termos){
         mensagem.textContent = 'Marque a confirmação dos dados.'
     }
-
+    mensagem.remove()
     validacao.textContent = 'fomulário validado com sucesso.'
 })
