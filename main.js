@@ -32,12 +32,14 @@ form.addEventListener('submit', function(event){
         return
     }
 
-    if (descricao.length <10){
-        mensagem.textContent = 'A descrição deve ter pelo menos 10 caracteres'
+    if (descricao.length < 10){
+        mensagem.textContent = 'A descrição deve ter pelo menos 10 caracteres';
+        return;
     }
 
     if (!termos){
-        mensagem.textContent = 'Marque a confirmação dos dados.'
+        mensagem.textContent = 'Marque a confirmação dos dados.';
+        return;
     }
     mensagem.remove()
     validacao.textContent = 'fomulário validado com sucesso.'
